@@ -82,18 +82,12 @@ namespace LifeRayTestProject1.Tests
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Open and check home page", new string[] {
-                "Dummy",
-                "Ignore"}, SourceLine=8)]
+        [TechTalk.SpecRun.ScenarioAttribute("Open and check home page", SourceLine=7)]
         public virtual void OpenAndCheckHomePage()
         {
-            string[] tagsOfScenario = new string[] {
-                    "Dummy",
-                    "Ignore"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Open and check home page", null, new string[] {
-                        "Dummy",
-                        "Ignore"});
-#line 9
+            string[] tagsOfScenario = ((string[])(null));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Open and check home page", null, ((string[])(null)));
+#line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -116,7 +110,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 10
+#line 9
  testRunner.Then("the correct page appears", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -127,7 +121,7 @@ this.FeatureBackground();
         {
             string[] tagsOfScenario = exampleTags;
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Valet Parking", null, exampleTags);
-#line 12
+#line 11
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -150,86 +144,86 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
-#line 13
+#line 12
  testRunner.When(string.Format("I select {0}", pType), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 14
+#line 13
  testRunner.And(string.Format("I set entry datetime {0}", pEntry), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 15
+#line 14
  testRunner.And(string.Format("I set leave datetime {0}", pLeave), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 16
+#line 15
  testRunner.And("I press Caluclate", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 17
+#line 16
  testRunner.Then(string.Format("I got the following price and metrics: {0} dollar {1} days {2} hours {3} minutes", rPrice, rDays, rHours, rMinutes), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 0", SourceLine=20)]
+        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 0", SourceLine=19)]
         public virtual void ValetParking_Variant0()
         {
-#line 12
+#line 11
 this.ValetParking("Valet Parking", "12/1/2019 01:00 AM", "12/1/2019 02:00 AM", "12", "0", "1", "0", "", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 1", SourceLine=20)]
+        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 1", SourceLine=19)]
         public virtual void ValetParking_Variant1()
         {
-#line 12
+#line 11
 this.ValetParking("Valet Parking", "12/1/2019 01:00 AM", "12/1/2019 05:00 AM", "12", "0", "4", "0", "", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 2", SourceLine=20)]
+        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 2", SourceLine=19)]
         public virtual void ValetParking_Variant2()
         {
-#line 12
+#line 11
 this.ValetParking("Valet Parking", "12/1/2019 01:00 AM", "12/2/2019 02:00 AM", "36", "1", "1", "0", "", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 3", SourceLine=20)]
+        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 3", SourceLine=19)]
         public virtual void ValetParking_Variant3()
         {
-#line 12
+#line 11
 this.ValetParking("Short-Term Parking", "12/1/2019 01:00 AM", "12/1/2019 02:00 AM", "2", "0", "1", "0", "", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 4", SourceLine=20)]
+        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 4", SourceLine=19)]
         public virtual void ValetParking_Variant4()
         {
-#line 12
+#line 11
 this.ValetParking("Short-Term Parking", "12/1/2019 01:00 AM", "12/2/2019 02:00 AM", "26", "1", "1", "0", "", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 5", SourceLine=20)]
+        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 5", SourceLine=19)]
         public virtual void ValetParking_Variant5()
         {
-#line 12
-this.ValetParking("Valet Parking", "12/1/2019 00:00 AM", "12/1/2019 24:00 AM", "18", "1", "0", "0", "", ((string[])(null)));
+#line 11
+this.ValetParking("Valet Parking", "12/1/2019 01:00 AM", "12/2/2019 01:00 AM", "18", "1", "0", "0", "", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 6", SourceLine=20)]
+        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 6", SourceLine=19)]
         public virtual void ValetParking_Variant6()
         {
-#line 12
-this.ValetParking("Short-Term Parking", "12/1/2019 00:00 AM", "12/2/2019 00:00 AM", "24", "1", "0", "0", "", ((string[])(null)));
+#line 11
+this.ValetParking("Short-Term Parking", "12/1/2019 01:00 AM", "12/2/2019 01:00 AM", "24", "1", "0", "0", "", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 7", SourceLine=20)]
+        [TechTalk.SpecRun.ScenarioAttribute("Valet Parking, Variant 7", SourceLine=19)]
         public virtual void ValetParking_Variant7()
         {
-#line 12
-this.ValetParking("Short-Term Parking", "12/1/2019 00:00 AM", "12/1/2019 11:59 PM", "24", "0", "23", "59", "47 dollar, but with daily limit it should be 24", ((string[])(null)));
+#line 11
+this.ValetParking("Short-Term Parking", "12/1/2019 01:00 AM", "12/1/2019 11:59 PM", "24", "0", "22", "59", "47 dollar, but with daily limit it should be 24", ((string[])(null)));
 #line hidden
         }
         

@@ -5,7 +5,6 @@ Background: Open the test site
 	Given I Open a Chrome Browser
 	And I navigate to http://www.shino.de/parkcalc/index.php
 
-@Dummy @Ignore
 Scenario: Open and check home page
 	Then the correct page appears
 
@@ -23,8 +22,8 @@ Examples:
 | Valet Parking      | 12/1/2019 01:00 AM | 12/2/2019 02:00 AM | 36     | 1     | 1      | 0        |                                                 |
 | Short-Term Parking | 12/1/2019 01:00 AM | 12/1/2019 02:00 AM | 2      | 0     | 1      | 0        |                                                 |
 | Short-Term Parking | 12/1/2019 01:00 AM | 12/2/2019 02:00 AM | 26     | 1     | 1      | 0        |                                                 |
-| Valet Parking      | 12/1/2019 00:00 AM | 12/1/2019 24:00 AM | 18     | 1     | 0      | 0        |                                                 |
-| Short-Term Parking | 12/1/2019 00:00 AM | 12/2/2019 00:00 AM | 24     | 1     | 0      | 0        |                                                 |
-| Short-Term Parking | 12/1/2019 00:00 AM | 12/1/2019 11:59 PM | 24     | 0     | 23     | 59       | 47 dollar, but with daily limit it should be 24 |
+| Valet Parking      | 12/1/2019 01:00 AM | 12/2/2019 01:00 AM | 18     | 1     | 0      | 0        |                                                 |
+| Short-Term Parking | 12/1/2019 01:00 AM | 12/2/2019 01:00 AM | 24     | 1     | 0      | 0        |                                                 |
+| Short-Term Parking | 12/1/2019 01:00 AM | 12/1/2019 11:59 PM | 24     | 0     | 22     | 59       | 47 dollar, but with daily limit it should be 24 |
 
 

@@ -90,10 +90,12 @@ namespace LifeRayTestProject1
         {
             
             StartingDate.SendKeys(dt.ToString("MM/dd/yyyy"));
-            StartingTime.SendKeys(dt.ToString("HH:mm"));
+            StartingTime.SendKeys(dt.ToString("hh:mm"));
+
+            string AMPM = (Int32.Parse(dt.ToString("HH")) < 12) ? "AM" : "PM";
 
             //AM/PM
-            switch (dt.ToString("tt"))
+            switch (AMPM)
             {
                 case "AM":
                     StartingTimeAM.Click();
@@ -109,14 +111,14 @@ namespace LifeRayTestProject1
         public void SetLeaveDateTime(DateTime dt)
         {
             // Clear
-
-
-
+            
             LeavingDate.SendKeys(dt.ToString("MM/dd/yyyy"));
-            LeavingTime.SendKeys(dt.ToString("HH:mm"));
+            LeavingTime.SendKeys(dt.ToString("hh:mm"));
 
+            string AMPM = (Int32.Parse(dt.ToString("HH")) < 12) ? "AM": "PM";
+            
             //AM/PM
-            switch (dt.ToString("tt"))
+            switch (AMPM)
             {
                 case "AM":
                     LeavingTimeAM.Click();
